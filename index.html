@@ -1,118 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Brahem ikbele</title>
+    <title>Brahem Ikbele</title>
 </head>
-    
+
 <body>
 
-    <header>
-    <a href="#" class="logo">ikbele</a>
-    <nav class="navigation">
-    <a href="#home">home</a>
-    <a href="#about ">about</a>
-    <a href="#service">service</a>
-    <a href="#portfolio">portfolio</a>
-    <a href="#contact">contact</a> 
-    
-    <a href="#projet">projet</a>
+<!-- Header avec Bootstrap classes -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Ikbele</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="navbar-nav ml-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#service">Service</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#projet">Projet</a>
+        </nav>
+    </div>
+</header>
 
+<!-- Section principale -->
+<section class="main text-center text-light bg-secondary py-5">
+    <div class="container">
+        <h2>Hello, I'm Ikbele Brahem<br><span>An Developer Student</span></h2>
+        <a href="#projects" class="btn btn-primary mt-3">View my work</a>
+        <div class="mt-4">
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank" class="text-light mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-light mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/" target="_blank" class="text-light mx-2"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </div>
+</section>
 
+<!-- Services Section avec Bootstrap Cards -->
+<section class="cards py-5" id="services">
+    <div class="container">
+        <h2 class="title text-center mb-4">Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-edit fa-3x mb-3"></i>
+                        <h5 class="card-title">Script Writing</h5>
+                        <p class="card-text">Research and write scripts for different topics that can directly help you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-database fa-3x mb-3"></i>
+                        <h5 class="card-title">Gestion de Base de Données</h5>
+                        <p class="card-text">Conception et gestion de bases de données relationnelles et NoSQL comme MySQL, PostgreSQL, et MongoDB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-code fa-3x mb-3"></i>
+                        <h5 class="card-title">Développement Web</h5>
+                        <p class="card-text">Création de sites web dynamiques et responsives avec HTML, CSS, JavaScript, et frameworks comme React et Vue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </nav>
-    </header>
-    <section class="main">
+<!-- Contact Section -->
+<section class="cards contact py-5 bg-light" id="contact">
+    <div class="container">
+        <h2 class="title text-center mb-4">Let's work together</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-phone fa-2x mb-3"></i>
+                        <h5 class="card-title">Phone</h5>
+                        <p class="card-text">+21622222222</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-envelope fa-2x mb-3"></i>
+                        <h5 class="card-title">Email</h5>
+                        <p class="card-text">business@ikbele.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-center text-light py-4">
+    <div class="container">
+        <p class="footer-title mb-2">Copyrights @ <span>Brahem Ikbele</span></p>
         <div>
-        <h2>Hello, I'm Ikbele Brahem <br><span>An developeur Student </span></h2>
-        
-        <a href="#projects" class="main-btn">View my work</a>
-        <div class="social-icons">
-        <a href="https://www.linkedin.com/feed/" target="_blank"> 
-          <i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank">
-          <i class="fab fa-facebook"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank">
-          <i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank" class="btn-primary">About me
-          <i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank" class="text-light mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-light mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/" target="_blank" class="text-light mx-2"><i class="fab fa-github"></i></a>
         </div>
-        </div>
-        </section>
-        <section class="cards" id="services">
-          <h2 class="title">Services</h2>
-          <div class="content">
-              <div class="card">
-                  <div class="icon">
-                    <i class="fas fa-edit"></i>
-                  </div>
-                  <div class="info">
-                      <h3>Script Writing</h3>
-                      <p>Research and write scripts for different topics that can then be directly help you</p>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="icon">
-                  <i class="fas fa-database"></i>
-                  </div>
-                  <div class="info">
-                      <h3>Gestion de Base de Données</h3>
-                      <p>Conception et gestion de bases de données relationnelles et NoSQL comme MySQL, PostgreSQL, et MongoDB</p>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="icon">
-                    <i class="fas fa-code"></i>
-                  </div>
-                  <div class="info">
-                      <h3>Développement Web</h3>
-                      <p> Création de sites web dynamiques et responsives avec HTML, CSS, JavaScript, et frameworks comme React et Vue</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section class="cards contact" id="contact">
-        <h2 class="title">Let's work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3>Phone</h3>
-                    <p>+21622222222</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="info">
-                    <h3>Email</h3>
-                    <p>business@ikbele.com</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-      <p class="footer-title">Copyrights @ <span>brahem ikbele</span></p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/feed/" target="_blank"> 
-          <i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank">
-          <i class="fab fa-facebook"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61551515842177&locale=fr_FR" target="_blank">
-          <i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank" class="btn-primary">
-          <i class="fab fa-github"></i></a>
-      </div>
-  </footer>  
-        
-   </body>    
-        
+    </div>
+</footer>  
 
+<!-- Bootstrap and jQuery scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
